@@ -628,25 +628,10 @@ O sistema realizará a análise e exibirá o resultado no console.
 
 ---
 
-# 🎓 Conclusão
-
-O projeto demonstra a implementação de um **Sistema Especialista baseado em regras**, capaz de analisar solicitações antes de seu encaminhamento para uma IA generativa.
-
-A solução não depende apenas da identificação de uma única regra. Ela permite que **múltiplas regras sejam ativadas simultaneamente** e utiliza um mecanismo de **prioridade para resolver conflitos**.
-
-Além disso, o sistema apresenta uma explicação da decisão, classifica o risco e possui um mecanismo de fallback para situações que não podem ser classificadas com segurança.
-
-Dessa forma, o projeto atende aos principais requisitos propostos para a atividade, combinando **C#, programação orientada a objetos, regras de negócio, análise de risco e explicabilidade**.
 
 ---
 
-## 👥 Projeto acadêmico
-
-**Projeto:** Sistema Especialista de Triagem de Solicitações
-**Linguagem:** C#
-**Tipo:** Aplicação Console
-**Objetivo:** Análise e classificação de solicitações antes do encaminhamento para IA generativa.
-
+## 👥 Relatório
 
 1. Por que não é adequado utilizar uma IA generativa para tomar todas as decisões de segurança?
 
@@ -701,3 +686,18 @@ Explicação: foi identificada uma informação potencialmente sensível.
 O Sistema Especialista seria responsável pela segurança e pelas decisões determinísticas, como identificar riscos, aplicar regras, resolver conflitos e bloquear solicitações.
 
 A IA generativa seria responsável por tarefas como responder perguntas, explicar conceitos, gerar exemplos de código e produzir respostas em linguagem natural.
+
+
+
+# 🎓 Conclusão
+
+Sistemas especialistas podem trabalhar junto com IA generativa de forma complementar.
+O Sistema Especialista pode ficar responsável por analisar regras, riscos e condições de segurança.
+A IA generativa pode atuar depois, realizando tarefas que exigem interpretação e geração de conteúdo.
+Essa divisão permite aproveitar as vantagens das duas tecnologias.
+A utilização de IA não significa que todas as decisões precisam ser entregues ao modelo.
+Em situações de segurança, regras determinísticas continuam sendo importantes.
+Validações e mecanismos de prioridade também ajudam a manter o sistema previsível.
+Além disso, um fallback permite tratar situações que não são conhecidas pelas regras.
+Dessa forma, a IA pode ser utilizada com mais controle e segurança.
+O resultado é uma solução que combina a flexibilidade da IA com a confiabilidade das regras.
