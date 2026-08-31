@@ -1,0 +1,14 @@
+C:\Users\53384866878\Documents\TriagemIA\TriagemIA\TriagemIA\obj\Debug\net10.0\TriagemIA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\53384866878\Documents\TriagemIA\TriagemIA\TriagemIA\obj\Debug\net10.0\TriagemIA.AssemblyInfoInputs.cache
+C:\Users\53384866878\Documents\TriagemIA\TriagemIA\TriagemIA\obj\Debug\net10.0\TriagemIA.AssemblyInfo.cs
+C:\Users\53384866878\Documents\TriagemIA\TriagemIA\TriagemIA\obj\Debug\net10.0\TriagemIA.csproj.CoreCompileInputs.cache
+C:\Users\53384866878\Documents\TriagemIA\TriagemIA\TriagemIA\bin\Debug\net10.0\TriagemIA.exe
+C:\Users\53384866878\Documents\TriagemIA\TriagemIA\TriagemIA\bin\Debug\net10.0\TriagemIA.deps.json
+C:\Users\53384866878\Documents\TriagemIA\TriagemIA\TriagemIA\bin\Debug\net10.0\TriagemIA.runtimeconfig.json
+C:\Users\53384866878\Documents\TriagemIA\TriagemIA\TriagemIA\bin\Debug\net10.0\TriagemIA.dll
+C:\Users\53384866878\Documents\TriagemIA\TriagemIA\TriagemIA\bin\Debug\net10.0\TriagemIA.pdb
+C:\Users\53384866878\Documents\TriagemIA\TriagemIA\TriagemIA\obj\Debug\net10.0\TriagemIA.dll
+C:\Users\53384866878\Documents\TriagemIA\TriagemIA\TriagemIA\obj\Debug\net10.0\refint\TriagemIA.dll
+C:\Users\53384866878\Documents\TriagemIA\TriagemIA\TriagemIA\obj\Debug\net10.0\TriagemIA.pdb
+C:\Users\53384866878\Documents\TriagemIA\TriagemIA\TriagemIA\obj\Debug\net10.0\TriagemIA.genruntimeconfig.cache
+C:\Users\53384866878\Documents\TriagemIA\TriagemIA\TriagemIA\obj\Debug\net10.0\ref\TriagemIA.dll
