@@ -646,3 +646,58 @@ Dessa forma, o projeto atende aos principais requisitos propostos para a ativida
 **Linguagem:** C#
 **Tipo:** Aplicação Console
 **Objetivo:** Análise e classificação de solicitações antes do encaminhamento para IA generativa.
+
+
+1. Por que não é adequado utilizar uma IA generativa para tomar todas as decisões de segurança?
+
+Porque uma IA generativa pode apresentar respostas diferentes para situações semelhantes e não é totalmente previsível. Em decisões de segurança, é importante ter resultados consistentes e fáceis de verificar.
+
+Por isso, decisões críticas devem ser feitas por regras determinísticas, enquanto a IA pode ser utilizada para auxiliar em outras tarefas.
+
+2. Qual a vantagem de utilizar regras determinísticas?
+
+A principal vantagem é a previsibilidade. As mesmas condições sempre produzem o mesmo resultado.
+
+Isso facilita a manutenção, a auditoria e a explicação das decisões do sistema.
+
+3. O que acontece quando duas ou mais regras são verdadeiras?
+
+O sistema registra todas as regras ativadas e utiliza a prioridade para escolher qual delas determinará a decisão final.
+
+Por exemplo, uma solicitação pode conter uma senha e também pedir uma operação destrutiva. Nesse caso, as duas regras são ativadas, mas a regra de dado sensível possui maior prioridade e o resultado será Bloqueado.
+
+4. Por que a prioridade das regras é importante?
+
+Porque uma solicitação pode ativar regras com decisões diferentes. A prioridade fornece um critério para resolver esses conflitos.
+
+No projeto, regras mais graves possuem maior prioridade, garantindo que situações de maior risco tenham preferência.
+
+5. Por que o sistema deve possuir um fallback?
+
+Porque nem todas as solicitações serão reconhecidas pelas regras existentes.
+
+Quando nenhuma regra é ativada, o sistema utiliza o fallback e determina RevisaoNecessaria, evitando que uma solicitação desconhecida seja considerada automaticamente segura.
+
+6. Qual a diferença entre Regra, Fato, Inferência, Decisão e Explicação?
+Regra: condição definida pelo sistema para determinar uma ação.
+Fato: característica identificada na solicitação.
+Inferência: conclusão obtida a partir dos fatos e das regras.
+Decisão: resultado final da análise: Permitido, RevisaoNecessaria ou Bloqueado.
+Explicação: justificativa que mostra por que aquela decisão foi tomada.
+
+Exemplo:
+
+Fato: a solicitação contém uma senha.
+↓
+Regra: dados sensíveis devem ser bloqueados.
+↓
+Inferência: REGRA-002 foi ativada.
+↓
+Decisão: Bloqueado.
+↓
+Explicação: foi identificada uma informação potencialmente sensível.
+7. Em uma solução híbrida, qual seria a responsabilidade do Sistema Especialista e da IA generativa?
+
+O Sistema Especialista seria responsável pela segurança e pelas decisões determinísticas, como identificar riscos, aplicar regras, resolver conflitos e bloquear solicitações.
+
+A IA generativa seria responsável por tarefas como responder perguntas, explicar conceitos, gerar exemplos de código e produzir respostas em linguagem natural.
